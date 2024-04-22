@@ -1,3 +1,14 @@
+import { graphql } from "relay-runtime";
+
+const countryFragment = graphql`
+  fragment TestComponent_country on Country {
+    name
+    phone
+    currency
+    emoji
+  }
+`
+
 type TestComponentProps = {
 
 };
